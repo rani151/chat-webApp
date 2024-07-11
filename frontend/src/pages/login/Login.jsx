@@ -15,10 +15,10 @@ const Login = () => {
 
 	return (
 		<div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
-			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
-				<h1 className='text-3xl font-semibold text-center text-gray-300'>
+			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10'>
+				<h1 className='text-3xl font-semibold text-center text-white'>
 					Login
-					<span className='text-blue-500'> ChatApp</span>
+					<span className='text-pink-700'> ChatApp</span>
 				</h1>
 
 				<form onSubmit={handleSubmit}>
@@ -29,7 +29,7 @@ const Login = () => {
 						<input
 							type='text'
 							placeholder='Enter username'
-							className='w-full input input-bordered h-10'
+							className="input input-bordered input-error w-full max-w-xs" 
 							value={username}
 							onChange={(e) => setUsername(e.target.value)}
 						/>
@@ -42,17 +42,17 @@ const Login = () => {
 						<input
 							type='password'
 							placeholder='Enter Password'
-							className='w-full input input-bordered h-10'
+							className="input input-bordered input-error w-full max-w-xs" 
 							value={password}
 							onChange={(e) => setPassword(e.target.value)}
 						/>
 					</div>
-					<Link to='/signup' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block'>
+					<Link to='/signup' className='text-sm  hover:underline hover:text-pink-900 mt-2 inline-block'>
 						{"Don't"} have an account?
 					</Link>
 
 					<div>
-						<button className='btn btn-block btn-sm mt-2' disabled={loading}>
+						<button className='btn btn-block btn-sm mt-2 border border-pink-700' disabled={loading}>
 							{loading ? <span className='loading loading-spinner '></span> : "Login"}
 						</button>
 					</div>

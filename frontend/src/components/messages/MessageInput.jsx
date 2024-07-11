@@ -18,8 +18,8 @@ const MessageInput = () => {
 			<div className='w-full relative'>
 				<input
 					type='text'
-					className='border text-sm rounded-lg block w-full p-2.5  bg-gray-700 border-gray-600 text-white'
-					placeholder='Send a message'
+					className=' input input-bordered input-secondary text-sm rounded-lg block w-full p-2.5  bg-pink-200  text-black'
+					placeholder='Send a message' 
 					value={message}
 					onChange={(e) => setMessage(e.target.value)}
 				/>
@@ -29,8 +29,10 @@ const MessageInput = () => {
 			</div>
 		</form>
 	);
+
+  
 };
-export default MessageInput;
+export default MessageInput; 
 
 // STARTER CODE SNIPPET
 // import { BsSend } from "react-icons/bs";
