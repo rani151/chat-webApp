@@ -1,6 +1,7 @@
 # MERN Stack Project: Build and Deploy a Real Time Chat App | JWT, Socket.io
 
-![chat-webApp](image/Uploading Screenshot 2024-07-12 013934.png)
+![Uploading Screenshot 2024-07-12 013934.png…]()
+
 
 
 
